@@ -4,6 +4,35 @@ This is the documentation && source code of **Build & Borrow**, built on Radix D
 
 It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
 
+Submission form:
+Logo
+
+Project TaglineThis question is required.*
+Provide a precise description of your project's vision (Max. 300 characters).
+
+Project DescriptionThis question is required.*
+Fill in the details about your project.
+
+a.
+Github Repo URLThis question is required.*
+
+Project Demo URLs
+Links to your website, whitepaper, app, pitch deck, demo videos, etc.
+
+Project Social Media URLs
+
+Team formationThis question is required.*
+Please provide the full names of your team members and their roles in this project.
+
+Example:
+- Szutung Chen - Project Manager
+- Carol Saab - Frontend Developer
+- Berta Navarro - Full-stack Engineer
+
+b.
+Telegram Handle This question is required.*
+Please provide at least one Telegram handle for project verification contact. This information is only accessible to the EBC and the Radix team.
+
 
 ## Table of Content
 
