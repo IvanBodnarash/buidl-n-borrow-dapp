@@ -57,6 +57,9 @@ The mission is to offer a new Lending & Borrowing Money Market that at the same 
 
 overview
 
+https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?usp=sharing&ouid=103814174963912216601&rtpof=true&sd=true
+
+
 ### Core offering
 
 offer
