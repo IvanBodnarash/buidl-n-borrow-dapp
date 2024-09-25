@@ -7,12 +7,12 @@ It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Mo
 
 ## Table of Content
 
-  * [💻 Project introduction](#💻 Project introduction)
+  * [💻 Project introduction](#Project introduction)
      + [Mission](#Mission)
   * [📈 Market opportunity & Value Proposition](#📈 Market opportunity & Value Proposition)
-  * [📆 Roadmap](#📆 Roadmap)
-  * [🚀 Quick start](#🚀 Quick start)
-  * [👥 Contributing](#👥 Contributing)
+  * [📆 Roadmap](#Roadmap)
+  * [🚀 Quick start](#Quick start)
+  * [👥 Contributing](#Contributing)
   * [License](#license)
     
 ## 💻 Project introduction
@@ -29,10 +29,24 @@ overview
 
 offer
 
-## 📈 Market opportunity & Value Proposition
+## Market opportunity & Value Proposition
 
 Competitive landscape,problem aiming to address, project features and benefits
 
+### Project Features:
+
+* **Add collateral** - Allows users to deposit collateral into the vault to be locked away and used to overcollaterize their loan(s).
+* **Borrow** - Allows users to borrow from the vault with a max borrow of 50%.
+* 
+* **Deposit** - Allows users to deposit liquidity into the lending vault and earn protocol fees.
+* **Repay** - Allows users to repay their loan in partial or in full.
+* 
+* **Liquidate** - Allows users to liquidate any loans that have a Health Factor of 1 or below.
+
+### Ecosystem benefits:
+* **Validator node** - Collaborate with the infrastructure with our own validator node and help to secure the network.
+* **Buidlers grant** - The project dedicates 50% of the validator fees to grant project developers that uses our node.
+* 
 ## 📆 Roadmap
 
 1. 2024 Q3. Hackathon version, on Stokenet
@@ -44,7 +58,7 @@ Competitive landscape,problem aiming to address, project features and benefits
 
 Check document QuickStart.md
 
-## 👥 Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
