@@ -1,5 +1,7 @@
 # Buidl & Borrow
 
+![](./Buidl_n_borrow_logo.png)
+
 This is the documentation && source code of **Build & Borrow**, built on Radix DLT.
 
 It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
@@ -56,6 +58,8 @@ The mission is to offer a new Lending & Borrowing Money Market that at the same 
 ### Overview
 
 overview
+
+![](./Buidl_n_borrow_process.png.png)
 
 https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?usp=sharing&ouid=103814174963912216601&rtpof=true&sd=true
 
