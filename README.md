@@ -1,6 +1,6 @@
 # Buidl & Borrow
 
-![](./Buidl_n_borrow_logo.png)
+![](./public/images/Buidl_n_borrow_logo_mini.png)
 
 This is the documentation && source code of **Build & Borrow**, built on Radix DLT.
 
@@ -59,7 +59,7 @@ The mission is to offer a new Lending & Borrowing Money Market that at the same 
 
 overview
 
-![](./Buidl_n_borrow_process.png.png)
+![](./public/images/Buidl_n_borrow_process.png)
 
 https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?usp=sharing&ouid=103814174963912216601&rtpof=true&sd=true
 
