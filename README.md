@@ -4,7 +4,10 @@ This is the documentation && source code of **Build & Borrow**, built on Radix D
 
 It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
 
-Submission form:
+### Submission form:
+
+https://form.typeform.com/to/n25zhCC6
+
 Logo
 
 Project TaglineThis question is required.*
