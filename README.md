@@ -10,7 +10,7 @@ This is the documentation && source code of **Build & Borrow**, built on Radix D
      + [Project tagline](#Project tagline)
      + [Project description](#Project description)
      + [Overview](#Overview)
-     + [PMVP Project Features](#PMVP Project Features)
+     + [MVP Project Features](#MVP)
      + [Roadmap](#Roadmap)
   * [🚀 Quick start](#Quick start)
   * [👥 Contributing](#Contributing)
