@@ -24,8 +24,7 @@ Buidl & Borrow is the lending platform to be integrated in other Radix projects.
 
 ### Description
 
-A DeFi Lending protocol with the vision to add value to the whole Radix DLT ecosystem. integrated in other DeFi projects and also
-and add value in the whole Radix DLT ecosystem.
+A DeFi Lending protocol with the vision to add value to the whole Radix DLT ecosystem.
 
 To accomplish this vision, it is composed by 4 pillars:
  1. Vault. Users can borrow their XRD and obtain interest %APR from the vault revenue.
