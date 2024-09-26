@@ -2,7 +2,7 @@
 
 ![](./public/images/Buidl_n_borrow_logo_mini.png)
 
-This is the documentation && source code of **Build & Borrow**, built on Radix DLT.
+This is the documentation && source code of **Buidl & Borrow**, built on Radix DLT.
 
 ## Table of Content
 
@@ -20,7 +20,7 @@ This is the documentation && source code of **Build & Borrow**, built on Radix D
 
 ### Tagline
 
-Build & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
+Buidl & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
 
 ### Description
 
