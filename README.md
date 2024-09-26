@@ -12,9 +12,8 @@ This is the documentation && source code of **Buidl & Borrow**, built on Radix D
      + [Overview](#Overview)
      + [MVP Project Features](#MVP)
      + [Roadmap](#Roadmap)
-  * [🚀 Quick start](#Quick-start)
   * [👥 Contributing](#Contributing)
-  * [Submission form](#Submission-form)
+  * [🚀 Submission form](#Submission-form)
     
 ## Introduction
 
@@ -80,9 +79,6 @@ https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?us
 - [ ] ***S2 2025***:
    - Incorporate the Vault module.
 
-## Quick-start
-
-Check document QuickStart.md
 
 ## Contributing
 
