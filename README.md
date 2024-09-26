@@ -34,11 +34,11 @@ To accomplish this vision, it is composed by 4 pillars:
 
 And the project interacts with 3 types of users, giving utility to all kind of profiles in the network:
 
- a. Borrower. Community and hodler profile.
+  a) Borrower. Community and hodler profile.
  
- b. Lender. DeFi and trader profile.
+  b) Lender. DeFi and trader profile.
  
- c. Project developer. Builder profile.
+  c) Project developer. Builder profile.
  
 
 ### Overview
