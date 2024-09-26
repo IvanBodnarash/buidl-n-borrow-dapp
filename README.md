@@ -4,7 +4,24 @@
 
 This is the documentation && source code of **Build & Borrow**, built on Radix DLT.
 
-It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
+The vision is Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
+
+### Project tagline
+
+Build & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
+
+It is composed by 4 pillars:
+ 1. Vault
+ 2. Lending
+ 3. Staking
+ 4. "Buidlers" grants
+
+And interacts with 3 types of users:
+a. Borrower
+b. Lender
+c. Project developer
+
+
 
 ### Submission form:
 
@@ -49,28 +66,37 @@ Team formation This question is required.*
     
 ## 💻 Project introduction
 
-### Mission
+### Project tagline
 
-The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem and COMMUNITY
+Build & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
+
+
+### Project description
+
+A DeFi Lending protocol with the vision to add value to the whole Radix DLT ecosystem. integrated in other DeFi projects and also
+and add value in the whole Radix DLT ecosystem.
+
+To accomplish this vision, it is composed by 4 pillars:
+ 1. Vault. Users can borrow their XRD and obtain interest %APR from the vault revenue.
+ 2. Lending. Users can lend STABLECOIN and use it for trading, increasing the number of transactions in the network and increasing the 24h volume value in the trading markets.
+ 4. Staking. Created our own validator node to increase the transaction per second that the network can process. At the same time, the vault and the lending protocol stake the exceed of $XRD in our validator, increasing the security of the network.
+ 5. "Buidlers" grants. 50% of the benefits of the validator node goes to a grant program, exclusive for the projects that integrates our protocol by using our lending smart contract, staking $XRD in our validator or using our node as gateway to post/get transacions. This helps to grow the ecosystem and supports the Radix API ge
+
+And the project interacts with 3 types of users, giving utility to all kind of profiles in the network:
+ a. Borrower. Community and hodler profile.
+ b. Lender. DeFi and trader profile.
+ c. Project developer. Builder profile.
 
 ### Overview
 
-overview
+Graphical diagram of the whole project circularity.
 
 ![](./public/images/Buidl_n_borrow_process.png)
 
 https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?usp=sharing&ouid=103814174963912216601&rtpof=true&sd=true
 
 
-### Core offering
-
-offer
-
-## Market opportunity & Value Proposition
-
-Competitive landscape,problem aiming to address, project features and benefits
-
-### Project Features:
+### MVP Project Features:
 
 * **Add collateral** - Allows users to deposit collateral into the vault to be locked away and used to overcollaterize their loan(s).
 * **Borrow** - Allows users to borrow from the vault with a max borrow of 50%.
@@ -80,18 +106,25 @@ Competitive landscape,problem aiming to address, project features and benefits
 * 
 * **Liquidate** - Allows users to liquidate any loans that have a Health Factor of 1 or below.
 
-### Ecosystem benefits:
 * **Validator node** - Collaborate with the infrastructure with our own validator node and help to secure the network.
 * **Buidlers grant** - The project dedicates 50% of the validator fees to grant project developers that uses our node.
-* 
-## 📆 Roadmap
 
-1. 2024 Q3. Hackathon version, on Stokenet
-2. 2024 Q4. MVP version, on Mainnet
-3. 2025 S1. Grants to other "buidlers"
-4. 2025 S2. Borrowing vault
+  
+### Roadmap
 
-## 🚀 Quick start
+1. Hackathon 2024:
+   - MVP version.
+   - Modules: Lending platform, using the founders liquidity, and a Validator node, manually integrated with the Lending.
+   - Deployed on Stokenet.
+3. Q4 2024:
+   - Lending platform and Validator node integrated automatically.
+   - Deploy on Mainnet.
+5. S1 2025:
+   - Incorporate the "Buidlers" Grants module.
+7. S2 2025:
+   - Incorporate the Vault module.
+
+## Quick start
 
 Check document QuickStart.md
 
@@ -108,34 +141,4 @@ One can contribute by creating _pull requests_, or by opening _issues_ for disco
 5. Open a Pull Request
 
 If you're a smart contract developer/project building on Radix DLT or just a user, don't hesitate to [DM us on GitHub]([https://github.com/IvanBodnarash/buidl-n-borrow-dapp]).
-
-## License
-
-The Radix Scrypto Challenges code is released under Radix Modified MIT License.
-
-    Copyright 2024 Radix Publishing Ltd
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy of
-    this software and associated documentation files (the "Software"), to deal in
-    the Software for non-production informational and educational purposes without
-    restriction, including without limitation the rights to use, copy, modify,
-    merge, publish, distribute, sublicense, and to permit persons to whom the
-    Software is furnished to do so, subject to the following conditions:
-
-    This notice shall be included in all copies or substantial portions of the
-    Software.
-
-    THE SOFTWARE HAS BEEN CREATED AND IS PROVIDED FOR NON-PRODUCTION, INFORMATIONAL
-    AND EDUCATIONAL PURPOSES ONLY.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE, ERROR-FREE PERFORMANCE AND NONINFRINGEMENT. IN NO
-    EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES,
-    COSTS OR OTHER LIABILITY OF ANY NATURE WHATSOEVER, WHETHER IN AN ACTION OF
-    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-    SOFTWARE OR THE USE, MISUSE OR OTHER DEALINGS IN THE SOFTWARE. THE AUTHORS SHALL
-    OWE NO DUTY OF CARE OR FIDUCIARY DUTIES TO USERS OF THE SOFTWARE.
-
-
 
