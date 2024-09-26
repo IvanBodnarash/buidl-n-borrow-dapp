@@ -55,10 +55,10 @@ https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?us
 
 * **Add collateral** - Allows users to deposit collateral into the vault to be locked away and used to overcollaterize their loan(s).
 * **Borrow** - Allows users to borrow from the vault with a max borrow of 50%.
-* 
+  
 * **Deposit** - Allows users to deposit liquidity into the lending vault and earn protocol fees.
 * **Repay** - Allows users to repay their loan in partial or in full.
-* 
+  
 * **Liquidate** - Allows users to liquidate any loans that have a Health Factor of 1 or below.
 
 * **Validator node** - Collaborate with the infrastructure with our own validator node and help to secure the network.
