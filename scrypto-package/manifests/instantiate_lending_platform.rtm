@@ -1,0 +1,12 @@
+CALL_METHOD
+    Address("account_sim1c956qr3kxlgypxwst89j9yf24tjc7zxd4up38x37zr6q4jxdx9rhma")  # Account address
+    "lock_fee"
+    Decimal("10")
+;
+CALL_FUNCTION
+    Address("package_sim1pk3cmat8st4ja2ms8mjqy2e9ptk8y6cx40v4qnfrkgnxcp2krkpr92")
+    "LendingPlatform"
+    "instantiate_lending_platform"
+    Decimal("0.05")   # interest_rate (5%)
+    Decimal("1.5")    # collateral_ratio (150%)
+;

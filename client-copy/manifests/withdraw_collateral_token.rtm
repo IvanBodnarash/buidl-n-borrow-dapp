@@ -1,0 +1,16 @@
+CALL_METHOD
+    Address("account_sim1c956qr3kxlgypxwst89j9yf24tjc7zxd4up38x37zr6q4jxdx9rhma")
+    "lock_fee"
+    Decimal("10")
+;
+CALL_METHOD
+    Address("component_sim1cqvff6g8fqtcd3h6t3lmwrnzt4anfcld9tdh0fmxs948j9tjkfe2mx")
+    "withdraw_collateral_token"
+    Decimal("100")
+    Address("resource_sim1thcrjys3fae93ske3zdt4gp4528qx97y469pdnzdq98rp0y9q5cwpk")
+;
+CALL_METHOD
+    Address("account_sim1c956qr3kxlgypxwst89j9yf24tjc7zxd4up38x37zr6q4jxdx9rhma")
+    "deposit_batch"
+    Expression("ENTIRE_WORKTOP")
+;
