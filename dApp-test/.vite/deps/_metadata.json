@@ -1,0 +1,49 @@
+{
+  "hash": "685072f0",
+  "configHash": "9f60c014",
+  "lockfileHash": "21ce83f5",
+  "browserHash": "510a4ca0",
+  "optimized": {
+    "@radixdlt/babylon-gateway-api-sdk": {
+      "src": "../../node_modules/@radixdlt/babylon-gateway-api-sdk/dist/babylon-gateway-api-sdk.mjs",
+      "file": "@radixdlt_babylon-gateway-api-sdk.js",
+      "fileHash": "9a517687",
+      "needsInterop": false
+    },
+    "@radixdlt/radix-dapp-toolkit": {
+      "src": "../../node_modules/@radixdlt/radix-dapp-toolkit/dist/index.js",
+      "file": "@radixdlt_radix-dapp-toolkit.js",
+      "fileHash": "10bfef86",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "198400d0",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c9ae206b",
+      "needsInterop": true
+    },
+    "prop-types": {
+      "src": "../../node_modules/prop-types/index.js",
+      "file": "prop-types.js",
+      "fileHash": "9e641e7b",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-4SFRHSJ3": {
+      "file": "chunk-4SFRHSJ3.js"
+    },
+    "connect-button-LXZ2YJET-GM2KMADY": {
+      "file": "connect-button-LXZ2YJET-GM2KMADY.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}
