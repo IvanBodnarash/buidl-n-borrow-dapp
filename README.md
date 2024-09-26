@@ -27,18 +27,19 @@ Buidl & Borrow is the lending platform to be integrated in other Radix projects.
 A DeFi Lending protocol with the vision to add value to the whole Radix DLT ecosystem.
 
 To accomplish this vision, it is composed by 4 pillars:
- 1. Vault. Users can borrow their XRD and obtain interest %APR from the vault revenue.
- 2. Lending. Users can lend STABLECOIN and use it for trading, increasing the number of transactions in the network and increasing the 24h volume value in the trading markets.
- 4. Staking. Created our own validator node to increase the transaction per second that the network can process. At the same time, the vault and the lending protocol stake the exceed of $XRD in our validator, increasing the security of the network.
- 5. "Buidlers" grants. 50% of the benefits of the validator node goes to a grant program, exclusive for the projects that integrates our protocol by using our lending smart contract, staking $XRD in our validator or using our node as gateway to post/get transacions. This helps to grow the ecosystem and supports the Radix API ge
+ 
+ 1. **Lending**. Users can lend STABLECOIN and use it for trading, increasing the number of transactions in the network and increasing the 24h volume value in the trading markets.
+ 2. **Staking**. Created our own validator node to increase the transaction per second that the network can process. At the same time, the vault and the lending protocol stake the exceed of $XRD in our validator, increasing the security of the network.
+ 3. **"Buidlers" grants**. 50% of the benefits of the validator node goes to a grant program, exclusive for the projects that integrates our protocol by using our lending smart contract, staking $XRD in our validator or using our node as gateway to post/get transacions. This helps to grow the ecosystem and supports the Radix API throughput.
+ 4. **Vault**. Users can borrow their XRD and obtain interest %APR from the vault revenue.
 
 And the project interacts with 3 types of users, giving utility to all kind of profiles in the network:
 
-  a) Borrower. Community and hodler profile.
+a) _ _Borrower_ _. Community and hodler profile.
  
-  b) Lender. DeFi and trader profile.
+b) _ _Lender_ _. DeFi and trader profile.
  
-  c) Project developer. Builder profile.
+c) _ _Project developer_ _. Builder profile.
  
 
 ### Overview
