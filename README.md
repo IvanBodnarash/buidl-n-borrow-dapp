@@ -68,16 +68,16 @@ https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?us
   
 ### Roadmap
 
-1. ***Hackathon 2024***:
+- [x] ***Hackathon 2024***:
    - MVP version.
    - Modules: Lending platform, using the founders liquidity, and a Validator node, manually integrated with the Lending.
    - Deployed on Stokenet.
-3. ***Q4 2024***:
+- [ ] ***Q4 2024***:
    - Lending platform and Validator node integrated automatically.
    - Deploy on Mainnet.
-5. ***S1 2025***:
+- [ ] ***S1 2025***:
    - Incorporate the "Buidlers" Grants module.
-7. ***S2 2025***:
+- [ ] ***S2 2025***:
    - Incorporate the Vault module.
 
 ## Quick-start
