@@ -33,9 +33,13 @@ To accomplish this vision, it is composed by 4 pillars:
  5. "Buidlers" grants. 50% of the benefits of the validator node goes to a grant program, exclusive for the projects that integrates our protocol by using our lending smart contract, staking $XRD in our validator or using our node as gateway to post/get transacions. This helps to grow the ecosystem and supports the Radix API ge
 
 And the project interacts with 3 types of users, giving utility to all kind of profiles in the network:
+
  a. Borrower. Community and hodler profile.
+ 
  b. Lender. DeFi and trader profile.
+ 
  c. Project developer. Builder profile.
+ 
 
 ### Overview
 
