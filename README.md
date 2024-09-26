@@ -113,6 +113,7 @@ Fill in the details about your project.
 
  - Video Demo - Project PitchThis question is required.*
 Please submit a video demo where you explain the problems your team is trying to solve and your solution, and highlight the project key features and functionality (Max. 5 minutes).
+https://youtu.be/FSVHPe6G_F0?si=-bQMiie0NTASee9d
 
  - Video Demo - Code Go-throughThis question is required.*
 Please submit a video demo where you explain and walk through your GitHub codes (Max. 15 minutes).
