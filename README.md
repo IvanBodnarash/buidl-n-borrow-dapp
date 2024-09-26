@@ -35,11 +35,11 @@ To accomplish this vision, it is composed by 4 pillars:
 
 And the project interacts with 3 types of users, giving utility to all kind of profiles in the network:
 
-a) _ _Borrower_ _. Community and hodler profile.
+a) _Borrower_. Community and hodler profile.
  
-b) _ _Lender_ _. DeFi and trader profile.
+b) _Lender_. DeFi and trader profile.
  
-c) _ _Project developer_ _. Builder profile.
+c) _Project developer_. Builder profile.
  
 
 ### Overview
@@ -68,16 +68,16 @@ https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?us
   
 ### Roadmap
 
-1. Hackathon 2024:
+1. ***Hackathon 2024***:
    - MVP version.
    - Modules: Lending platform, using the founders liquidity, and a Validator node, manually integrated with the Lending.
    - Deployed on Stokenet.
-3. Q4 2024:
+3. ***Q4 2024***:
    - Lending platform and Validator node integrated automatically.
    - Deploy on Mainnet.
-5. S1 2025:
+5. ***S1 2025***:
    - Incorporate the "Buidlers" Grants module.
-7. S2 2025:
+7. ***S2 2025***:
    - Incorporate the Vault module.
 
 ## Quick-start
