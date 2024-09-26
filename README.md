@@ -6,24 +6,23 @@ This is the documentation && source code of **Build & Borrow**, built on Radix D
 
 ## Table of Content
 
-  * [💻 Project introduction](#Project introduction)
-     + [Project tagline](#Project tagline)
-     + [Project description](#Project description)
+  * [💻 Introduction](#Introduction)
+     + [Tagline](#Tagline)
+     + [Description](#Description)
      + [Overview](#Overview)
      + [MVP Project Features](#MVP)
      + [Roadmap](#Roadmap)
-  * [🚀 Quick start](#Quick start)
+  * [🚀 Quick start](#Quick-start)
   * [👥 Contributing](#Contributing)
-  * [Submission form](#Submission form)
+  * [Submission form](#Submission-form)
     
-## 💻 Project introduction
+## Introduction
 
-### Project tagline
+### Tagline
 
 Build & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
 
-
-### Project description
+### Description
 
 A DeFi Lending protocol with the vision to add value to the whole Radix DLT ecosystem. integrated in other DeFi projects and also
 and add value in the whole Radix DLT ecosystem.
@@ -48,7 +47,8 @@ Graphical diagram of the whole project circularity.
 https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?usp=sharing&ouid=103814174963912216601&rtpof=true&sd=true
 
 
-### MVP Project Features:
+### MVP
+#### Project Features:
 
 * **Add collateral** - Allows users to deposit collateral into the vault to be locked away and used to overcollaterize their loan(s).
 * **Borrow** - Allows users to borrow from the vault with a max borrow of 50%.
@@ -76,7 +76,7 @@ https://docs.google.com/presentation/d/1w-HwvmPlJstPeslL8WXWIGs6wUulcR56/edit?us
 7. S2 2025:
    - Incorporate the Vault module.
 
-## Quick start
+## Quick-start
 
 Check document QuickStart.md
 
@@ -94,7 +94,7 @@ One can contribute by creating _pull requests_, or by opening _issues_ for disco
 
 If you're a smart contract developer/project building on Radix DLT or just a user, don't hesitate to [DM us on GitHub]([https://github.com/IvanBodnarash/buidl-n-borrow-dapp]).
 
-## Submission form
+## Submission-form
 
 - Form
 [https://form.typeform.com/to/n25zhCC6](https://form.typeform.com/to/n25zhCC6)
