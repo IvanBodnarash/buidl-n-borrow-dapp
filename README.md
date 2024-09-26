@@ -8,7 +8,7 @@ It is composed by 3 pillars: Liquid Staking & Restaking + Lending & Borrowing Mo
 
 ### Submission form:
 
-https://form.typeform.com/to/n25zhCC6
+[https://form.typeform.com/to/n25zhCC6](https://form.typeform.com/to/n25zhCC6)
 
 Logo
 
@@ -18,25 +18,23 @@ Provide a precise description of your project's vision (Max. 300 characters).
 Project DescriptionThis question is required.*
 Fill in the details about your project.
 
+Video Demo - Project PitchThis question is required.*
+
+Please submit a video demo where you explain the problems your team is trying to solve and your solution, and highlight the project key features and functionality (Max. 5 minutes).
+
+
+Video Demo - Code Go-throughThis question is required.*
+
+Please submit a video demo where you explain and walk through your GitHub codes (Max. 15 minutes).
+
+
 a.
 Github Repo URLThis question is required.*
 
-Project Demo URLs
-Links to your website, whitepaper, app, pitch deck, demo videos, etc.
 
-Project Social Media URLs
 
-Team formationThis question is required.*
-Please provide the full names of your team members and their roles in this project.
-
-Example:
-- Szutung Chen - Project Manager
-- Carol Saab - Frontend Developer
-- Berta Navarro - Full-stack Engineer
-
-b.
-Telegram Handle This question is required.*
-Please provide at least one Telegram handle for project verification contact. This information is only accessible to the EBC and the Radix team.
+Team formation This question is required.*
+...
 
 
 ## Table of Content
