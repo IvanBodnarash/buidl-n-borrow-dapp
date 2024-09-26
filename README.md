@@ -4,65 +4,17 @@
 
 This is the documentation && source code of **Build & Borrow**, built on Radix DLT.
 
-The vision is Liquid Staking & Restaking + Lending & Borrowing Money Market + Grants for "buidlers".
-
-### Project tagline
-
-Build & Borrow is the lending platform to be integrated in other Radix projects. The mission is to offer a new Lending & Borrowing Money Market that at the same time adds value to the Radix DLT ecosystem through Liquid Staking & Restaking and supports the communitty with Grants for "buidlers".
-
-It is composed by 4 pillars:
- 1. Vault
- 2. Lending
- 3. Staking
- 4. "Buidlers" grants
-
-And interacts with 3 types of users:
-a. Borrower
-b. Lender
-c. Project developer
-
-
-
-### Submission form:
-
-[https://form.typeform.com/to/n25zhCC6](https://form.typeform.com/to/n25zhCC6)
-
-Logo
-
-Project TaglineThis question is required.*
-Provide a precise description of your project's vision (Max. 300 characters).
-
-Project DescriptionThis question is required.*
-Fill in the details about your project.
-
-Video Demo - Project PitchThis question is required.*
-
-Please submit a video demo where you explain the problems your team is trying to solve and your solution, and highlight the project key features and functionality (Max. 5 minutes).
-
-
-Video Demo - Code Go-throughThis question is required.*
-
-Please submit a video demo where you explain and walk through your GitHub codes (Max. 15 minutes).
-
-
-a.
-Github Repo URLThis question is required.*
-
-
-
-Team formation This question is required.*
-...
-
-
 ## Table of Content
 
   * [💻 Project introduction](#Project introduction)
-     + [Mission](#Mission)
-  * [📈 Market opportunity & Value Proposition](#📈 Market opportunity & Value Proposition)
-  * [📆 Roadmap](#Roadmap)
+     + [Project tagline](#Project tagline)
+     + [Project description](#Project description)
+     + [Overview](#Overview)
+     + [PMVP Project Features](#PMVP Project Features)
+     + [Roadmap](#Roadmap)
   * [🚀 Quick start](#Quick start)
   * [👥 Contributing](#Contributing)
-  * [License](#license)
+  * [Submission form](#Submission form)
     
 ## 💻 Project introduction
 
@@ -142,3 +94,25 @@ One can contribute by creating _pull requests_, or by opening _issues_ for disco
 
 If you're a smart contract developer/project building on Radix DLT or just a user, don't hesitate to [DM us on GitHub]([https://github.com/IvanBodnarash/buidl-n-borrow-dapp]).
 
+## Submission form
+
+- Form
+[https://form.typeform.com/to/n25zhCC6](https://form.typeform.com/to/n25zhCC6)
+
+ - Logo
+
+ - Project Tagline This question is required.*
+Provide a precise description of your project's vision (Max. 300 characters).
+
+ - Project Description This question is required.*
+Fill in the details about your project.
+
+ - Video Demo - Project PitchThis question is required.*
+Please submit a video demo where you explain the problems your team is trying to solve and your solution, and highlight the project key features and functionality (Max. 5 minutes).
+
+ - Video Demo - Code Go-throughThis question is required.*
+Please submit a video demo where you explain and walk through your GitHub codes (Max. 15 minutes).
+
+ - Github Repo URL This question is required.*
+
+ - Team formation This question is required.*
