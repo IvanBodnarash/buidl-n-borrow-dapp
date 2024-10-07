@@ -20,21 +20,25 @@ mod lending_platform {
                     init {
                         "name" => "Loan Token", locked;
                         "symbol" => "LNT", locked;
+                        "description" => "Loan Token for Buidl & Borrow", locked;
+                        "icon_url" => Url::of("https://cdn-icons-png.flaticon.com/512/566/566295.png"), locked;
                     }
                 })
-                .divisibility(DIVISIBILITY_NONE)
-                .mint_initial_supply(1000)
+                .divisibility(DIVISIBILITY_MAXIMUM)
+                .mint_initial_supply(10000)
                 .into(); // Casting to the Bucket type
-
-            let collateral_bucket: Bucket = ResourceBuilder::new_fungible(OwnerRole::None)
+                
+                let collateral_bucket: Bucket = ResourceBuilder::new_fungible(OwnerRole::None)
                 .metadata(metadata! {
                     init {
                         "name" => "Collateral Token", locked;
                         "symbol" => "CLT", locked;
+                        "description" => "Collateral Token for Buidl & Borrow", locked;
+                        "icon_url" => Url::of("https://cdn-icons-png.flaticon.com/512/6681/6681925.png"), locked;
                     }
                 })
-                .divisibility(DIVISIBILITY_NONE)
-                .mint_initial_supply(1000)
+                .divisibility(DIVISIBILITY_MAXIMUM)
+                .mint_initial_supply(10000)
                 .into(); // Casting to the Bucket type
 
             // Creation of the vaults for the loan and collateral

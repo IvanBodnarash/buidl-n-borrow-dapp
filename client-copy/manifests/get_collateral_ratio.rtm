@@ -1,9 +1,0 @@
-CALL_METHOD
-    Address("account_sim1c956qr3kxlgypxwst89j9yf24tjc7zxd4up38x37zr6q4jxdx9rhma")  # Ваша адреса акаунту
-    "lock_fee"
-    Decimal("10")
-;
-CALL_METHOD
-    Address("component_sim1czv5uvvm9adzu22qmqacr8g3nz98mj3avcu2ga0jvwa7fyphn3ud3t")  # Адреса компонента LendingPlatform
-    "get_collateral_ratio"
-;

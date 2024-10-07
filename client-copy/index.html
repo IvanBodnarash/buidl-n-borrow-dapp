@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Buidl & Borrow</title>
   </head>
 
@@ -20,6 +20,7 @@
         <h2>Connect Account</h2>
         <radix-connect-button />
       </div>
+
       <div class="flex">
         <p>Account Name:</p>
         <pre id="accountName">None connected</pre>
@@ -32,59 +33,100 @@
       <br />
       <hr />
 
-      <h2>Instantiate Buidl & Borrow component</h2>
-      <div class="flex">
-        <input type="text" placeholder="package address" id="packageAddress" />
-        <input type="text" placeholder="gumball price" id="gumballPrice" />
-        <button id="instantiateComponent">Instantiate Component</button>
-      </div>
-      <div class="flex">
-        <p>Loan address:</p>
-        <pre id="componentAddress">None</pre>
-      </div>
-      <div class="flex">
-        <p>Collateral address:</p>
-        <pre id="ownerBadgeAddress">None</pre>
-      </div>
-      <div class="flex">
-        <p>Component address:</p>
-        <pre id="gumballResourceAddress">None</pre>
+      <div id="instantiateComponentDiv" style="display: none;">
+        <h2>Instantiate Buidl & Borrow component</h2>
+        <div class="flex">
+          <input
+            type="text"
+            placeholder="package address"
+            id="packageAddress"
+          />
+          <button id="instantiateComponent">Instantiate Component</button>
+        </div>
+        <div class="flex">
+          <p>Loan address:</p>
+          <pre id="loanResourceAddress">None</pre>
+        </div>
+        <div class="flex">
+          <p>Collateral address:</p>
+          <pre id="collateralResourceAddress">None</pre>
+        </div>
+        <div class="flex">
+          <p>Component address:</p>
+          <pre id="componentAddress">None</pre>
+        </div>
+
+        <br />
+        <hr />
+
       </div>
 
-      <br />
-      <hr />
-
-      <h2>Borrow Token</h2>
+      <h2>Get Collateral Token</h2>
+      <div class="flex">
+        <h3>
+          Available Amount of CLT:
+          <p id="collateralAmountDisplay"></p>
+        </h3>
+      </div>
       <form class="flex">
-        <input type="text" placeholder="borrow amount" id="borrowAmount" />
-        <button type="button" id="borrow">Borrow</button>
+        <input
+          type="text"
+          placeholder="collateral amount"
+          id="getCollateralAmountField"
+        />
+        <button type="button" id="getCollateralToken">Get CLT</button>
       </form>
 
       <br />
       <hr />
 
-      <h2>Owner Restricted Methods</h2>
-      <div class="flex">
-        <input type="text" placeholder="New Price" id="newPrice" />
-        <button id="setPrice">Set Price</button>
-      </div>
+      <h2>Borrow Tokens</h2>
+      <!-- <div class="flex">
+        <h3>
+          Available Amount of LNT:
+          <p id="loanTokenAmountDisplay"></p>
+        </h3>
+      </div> -->
+      <form class="flex">
+        <input
+          type="text"
+          placeholder="borrow amount (LNT)"
+          id="borrowAmount"
+        />
+        <input
+          type="text"
+          placeholder="collateral amount (CLT)"
+          id="collateralAmount"
+        />
+        <button type="button" id="borrow">Borrow</button>
+      </form>
+      <p id="collateralWarning">
+        Minimum collateral required: <span id="minCollateralDisplay"></span>
+      </p>
+      <p id="borrowLimitInfo">
+        Maximum available to borrow:
+        <span id="loanTokenAmountDisplay">Loading...</span> LNT
+      </p>
 
-      <button id="refill">Refill Gumball Machine</button>
-      <div class="flex">
-        <p>Gumballs in machine:<br /></p>
-        <pre id="numOfGumballs">None</pre>
-      </div>
+      <br />
+      <hr />
 
-      <button id="withdrawEarnings">Withdraw Earnings</button>
-      <div class="flex">
-        <p>Earnings:<br /></p>
-        <pre id="earnings">None</pre>
-      </div>
+      <h2>Loan Balance</h2>
+      <p id="loanBalance">Loading...</p>
+
+      <br />
+      <hr />
+
+      <h2>Repay Loan</h2>
+      <form class="flex">
+        <input type="text" placeholder="repay amount" id="repayAmount" />
+        <button type="button" id="repay">Repay</button>
+      </form>
 
       <br />
     </main>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

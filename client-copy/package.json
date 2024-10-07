@@ -1,5 +1,5 @@
 {
-  "name": "gumball-machine",
+  "name": "buidl-and-borrow",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@radixdlt/babylon-gateway-api-sdk": "^1.6.1",
-    "@radixdlt/radix-dapp-toolkit": "^2.0.0"
+    "@radixdlt/radix-dapp-toolkit": "^2.0.0",
+    "firebase": "^10.14.0"
   }
 }

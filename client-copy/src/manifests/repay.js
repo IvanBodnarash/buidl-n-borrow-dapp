@@ -1,26 +1,25 @@
-export const borrowManifest = (
-  accountAddress,
-  collateralResourceAddress,
-  componentAddress,
-  collateralAmount,
-  borrowAmount
-) => `
+export const repayManifest = (
+    accountAddress,
+    componentAddress,
+    loanResourceAddress,
+    repayAmount
+  ) => `
     CALL_METHOD
         Address("${accountAddress}")
         "withdraw"
-        Address("${collateralResourceAddress}")
-        Decimal("${collateralAmount}")
+        Address("${loanResourceAddress}")
+        Decimal("${repayAmount}")
     ;
     TAKE_FROM_WORKTOP
-        Address("${collateralResourceAddress}")
-        Decimal("${collateralAmount}")
+        Address("${loanResourceAddress}")
+        Decimal("${repayAmount}")
         Bucket("bucket1")
     ;
     CALL_METHOD
         Address("${componentAddress}")
-        "borrow"
-        Decimal("${borrowAmount}")
+        "repay"
         Bucket("bucket1")
+        Decimal("${repayAmount}")
     ;
     CALL_METHOD
         Address("${accountAddress}")
@@ -28,4 +27,5 @@ export const borrowManifest = (
         Expression("ENTIRE_WORKTOP")
         Enum<0u8>()
     ;
-`;
+  `;
+  
