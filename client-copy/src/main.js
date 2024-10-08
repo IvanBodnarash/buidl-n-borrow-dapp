@@ -16,6 +16,7 @@ let componentAddress =
 
 let account;
 let maxLoanTokensAvailable;
+let maxCollateralTokensAvailable;
 
 const updateLoanBalance = async (accountAddress) => {
   const loanData = await fetchLoanData(accountAddress);

@@ -37,7 +37,7 @@ export const fetchAndShowLendingAppState = async (
     if (loanTokenResource) {
       const loanTokenAmount = loanTokenResource.vaults.items[0].amount;
       document.getElementById("loanTokenAmountDisplay").innerText =
-        loanTokenAmount;
+        `${loanTokenAmount} LNT`;
     }
 
     if (collateralTokenResource) {

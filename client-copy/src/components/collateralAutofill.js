@@ -10,7 +10,7 @@ export const displayAndAutofillCollateral = (collateralRatio) => {
         const minCollateral = borrowAmount * collateralRatio;
         document.getElementById(
           "minCollateralDisplay"
-        ).innerText = `Minimum Collateral: ${minCollateral.toFixed(2)} CLT`;
+        ).innerText = `${minCollateral.toFixed(2)} CLT`;
 
         const collateralField = document.getElementById("collateralAmount");
         if (!collateralField.dataset.userChanged) {

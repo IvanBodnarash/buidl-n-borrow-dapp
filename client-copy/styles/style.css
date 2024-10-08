@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Alexandria", serif;
+}
+
+/* NAV */
+
+.logo-text {
+  font-family: 'DM Serif Text', serif;
 }
 
 main {
@@ -35,10 +44,10 @@ button {
   align-items: center;
 }
 
-.flex {
+/* .flex {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   column-gap: 1rem;
   flex-wrap: wrap;
-}
+} */

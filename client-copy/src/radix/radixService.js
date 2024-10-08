@@ -1,6 +1,7 @@
 import {
   RadixDappToolkit,
-  RadixNetwork
+  DataRequestBuilder,
+  RadixNetwork,
 } from "@radixdlt/radix-dapp-toolkit";
 import { GatewayApiClient } from "@radixdlt/babylon-gateway-api-sdk";
 
@@ -18,6 +19,8 @@ export const rdt = RadixDappToolkit({
 export const gatewayApi = GatewayApiClient.initialize(
   rdt.gatewayApi.clientConfig
 );
+
+rdt.walletApi.setRequestData(DataRequestBuilder.accounts().exactly(1));
 
 export const checkIfAdmin = (address) => {
   if (address === dAppDefinitionAddress) {
