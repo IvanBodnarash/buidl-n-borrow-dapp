@@ -47,23 +47,102 @@
           <li class="connect-btn ml-auto">
             <radix-connect-button />
           </li>
+          <li class="ml-4">
+            <button
+              id="accountButton"
+              class="p-2 flex items-center px-8 justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+            >
+              Account
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <button id="scrollToTopBtn" class="scroll-to-top show">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-12 h-12"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+    <div
+      id="sidebar"
+      class="fixed right-0 top-24 w-[26rem] h-5/6 bg-slate-800 bg-opacity-30 backdrop-blur-lg rounded-2xl text-slate-300 p-8 transform translate-x-full transition-transform duration-300"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <h2 class="text-2xl">Account Info</h2>
+        <button
+          id="closeSidebar"
+          class="text-6xl cursor-pointer hover:text-slate-400 border-none"
+        >
+          &times;
+        </button>
+      </div>
+      <h2 class="text-lg mt-4 text-slate-400" id="connectYourAccount"></h2>
+      <div id="accountInfo">
+        <p id="accountName" class="text-2xl"></p>
+        <p id="accountAddress" class="text-xl mt-2 text-slate-400"></p>
+        <p id="loanBalance" class="text-lg mt-2 text-slate-400"></p>
+      </div>
+    </div>
+
     <main>
-      <div>
-        <h1>Buidl & Borrow</h1>
+      <div class="flex justify-center items-center my-28">
+        <div class="w-5/6">
+          <h1 class="text-6xl text-slate-200 font-bold">
+            Welcome<br />
+            to Buidl & Borrow
+          </h1>
+          <p class="text-slate-400 text-lg mt-6">
+            Buidl & Borrow is a decentralized lending platform designed to offer
+            a seamless and secure way to borrow and lend cryptocurrency assets.
+          </p>
+          <p class="text-slate-500 text-md mt-6">
+            Whether you're looking to obtain a loan against your crypto
+            collateral or earn interest by lending, our platform empowers users
+            to engage in trustless, transparent financial transactions built on
+            blockchain technology.
+          </p>
+        </div>
+        <div>
+          <img src="./images/coin.png" alt="logo" class="coin-main" />
+        </div>
       </div>
 
-      <hr />
-
-      <div class="flex">
-        <p>Account Name:</p>
-        <pre id="accountName">None connected</pre>
-      </div>
-      <div class="flex">
-        <p>Account Address:</p>
-        <pre id="accountAddress">None connected</pre>
+      <div class="flex justify-center items-center my-28">
+        <div>
+          <img
+            src="./images/credit-and-loan.png"
+            alt="logo"
+            class="coin-main"
+          />
+        </div>
+        <div class="w-5/6">
+          <h1 class="text-6xl text-slate-200 text-end font-bold">
+            Quickly Borrow and Lend
+          </h1>
+          <p class="text-slate-400 text-lg mt-6 text-end">
+            Easy Borrowing Process – Quickly obtain loans by using your
+            cryptocurrency as collateral. Enter your desired loan amount,
+            deposit your collateral, and receive tokens instantly.
+          </p>
+          <p class="text-slate-500 text-md mt-6 text-end">
+            Transparency & Security – All transactions are recorded on the
+            blockchain, ensuring full transparency and protection of your
+            assets.
+          </p>
+        </div>
       </div>
 
       <div class="flex justify-center">
@@ -182,29 +261,41 @@ None</pre
         </div>
       </div>
 
-      <br />
-      <hr />
-
-      <h2>Loan Balance</h2>
-      <p id="loanBalance">Loading...</p>
-
-      <br />
-      <hr />
-
       <div class="flex justify-center mt-20">
         <div
           class="bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
         >
-          <h2>Repay Loan</h2>
-          <form class="flex">
-            <input type="text" placeholder="repay amount" id="repayAmount" />
-            <button type="button" id="repay">Repay</button>
+          <h2 class="text-3xl text-slate-200">Repay Loan</h2>
+          <form class="flex items-center mt-4">
+            <input
+              type="text"
+              placeholder="repay amount"
+              id="repayAmount"
+              class="w-full h-12 p-2 rounded-lg bg-slate-200 outline-none"
+            />
+            <button
+              type="button"
+              id="repay"
+              class="ml-4 h-12 p-2 w-80 flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+            >
+              Repay
+            </button>
           </form>
+          <div class="text-slate-300 text-xl mt-6 flex-col">
+            <h2>Loan Balance:</h2>
+            <p id="loanBalance" class="text-slate-400 mt-2">Loading...</p>
+          </div>
         </div>
       </div>
     </main>
 
+    <footer class="flex justify-center my-20">
+      <p class="text-slate-400 text-lg">Buidl & Borrow</p>
+      <!-- <p class="text-slate-500 text-lg">Buidl & Borrow</p> -->
+    </footer>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/script.js"></script>
   </body>
 </html>

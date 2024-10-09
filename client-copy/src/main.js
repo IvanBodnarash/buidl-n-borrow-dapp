@@ -21,21 +21,37 @@ let maxCollateralTokensAvailable;
 const updateLoanBalance = async (accountAddress) => {
   const loanData = await fetchLoanData(accountAddress);
 
+  const loanBalanceElements = document.querySelectorAll("#loanBalance");
+
   if (loanData && loanData.loanAmount) {
-    document.getElementById(
-      "loanBalance"
-    ).innerText = `You owe ${loanData.loanAmount} LNT`;
+    loanBalanceElements.forEach((element) => {
+      element.innerText = `You owe ${loanData.loanAmount} LNT`;
+    });
   } else {
-    document.getElementById("loanBalance").innerText = "You owe 0 LNT";
+    loanBalanceElements.forEach((element) => {
+      element.innerText = "You owe 0 LNT";
+    });
   }
 };
 
 rdt.walletApi.walletData$.subscribe(async (walletData) => {
+
+  if (!walletData || !walletData.accounts || walletData.accounts.length === 0) {
+    // document.getElementById("accountInfo").innerText = "";
+    document.getElementById("connectYourAccount").innerText = "Connect your account to use this app";
+    return;
+  }
+
+  // document.getElementById("connectYourAccount").innerText = "";
+
   account = walletData.accounts[0];
+
+  const shortAccountAddress = `${account?.address.slice(0, 18)} .... ${account?.address.slice(-8)}`;
+
   document.getElementById("accountName").innerText =
     account?.label ?? "None connected";
   document.getElementById("accountAddress").innerText =
-    account?.address ?? "None connected";
+  shortAccountAddress ?? "None connected";
 
   checkIfAdmin(account.address);
 
@@ -147,4 +163,12 @@ document.getElementById("instantiateComponent").onclick = async () => {
   } else {
     console.error("Package address is required for instantiation.");
   }
+};
+
+document.getElementById("accountButton").onclick = () => {
+  document.getElementById("sidebar").classList.toggle("translate-x-full");
+};
+
+document.getElementById("closeSidebar").onclick = () => {
+  document.getElementById("sidebar").classList.toggle("translate-x-full");
 };
