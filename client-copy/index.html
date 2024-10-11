@@ -6,57 +6,128 @@
     <meta name="description" content="" />
     <title>Buidl & Borrow</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images/coin.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="bg-gradient-to-r from-blue-950 to-slate-950">
-    <header class="bg-slate-950 w-full px-32 items-center">
-      <nav class="">
-        <ul class="flex items-center py-6">
-          <li class="mr-12">
-            <a
-              href="header"
-              class="text-3xl font-bold text-slate-200 logo-text cursor-pointer hover:text-slate-300"
-              >Buidl & Borrow</a
-            >
-          </li>
-          <li class="mr-6">
-            <a
-              href="header"
-              class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
-              >Home</a
-            >
-          </li>
-          <li class="mr-6">
-            <a
-              href="header"
-              class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
-              >About Us</a
-            >
-          </li>
-          <li class="mr-6">
-            <a
-              href="header"
-              class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
-              >Contacts</a
-            >
-          </li>
-          <li class="">
-            <button class="text-xl text-slate-300">Go to app</button>
-          </li>
-          <li class="connect-btn ml-auto">
-            <radix-connect-button />
-          </li>
-          <li class="ml-4">
+    <header class="bg-slate-950 w-full px-6 xl:px-32">
+      <nav class="flex items-center justify-between py-6">
+        <div class="flex items-center space-x-12">
+          <a
+            href="header"
+            class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg font-bold text-slate-200 logo-text cursor-pointer hover:text-slate-300"
+            >Buidl & Borrow
+          </a>
+
+          <ul
+            id="navMenu"
+            class="hidden lg:flex space-x-6 items-center text-xl text-slate-300"
+          >
+            <li class="mr-6">
+              <a
+                href="header"
+                class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+                >Home</a
+              >
+            </li>
+            <li class="mr-6">
+              <a
+                href="header"
+                class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+                >About Us</a
+              >
+            </li>
+            <li class="mr-6">
+              <a
+                href="header"
+                class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+                >Contacts</a
+              >
+            </li>
+            <li class="">
+              <button
+                class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+              >
+                <a href="#mainApp">Go to app</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center">
+          <button
+            id="burgerButton"
+            class="block lg:hidden text-slate-300 focus:outline-none relative z-50"
+          >
+            <!-- Icon for the burger menu -->
+            <div class="space-y-2">
+              <span class="block w-8 h-1 bg-slate-300 transition-all"></span>
+              <span class="block w-8 h-1 bg-slate-300 transition-all"></span>
+              <span class="block w-8 h-1 bg-slate-300 transition-all"></span>
+            </div>
+          </button>
+
+          <div class="hidden lg:flex items-center">
+            <radix-connect-button
+              class="connect-btn ml-auto"
+            ></radix-connect-button>
             <button
               id="accountButton"
-              class="p-2 flex items-center px-8 justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+              class="ml-4 p-2 flex items-center px-8 justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
             >
               Account
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
+
+      <!-- Mobile menu -->
+
+      <ul
+        id="mobileNav"
+        class="hidden absolute right-0 lg:w-1/3 md:w-3/5 sm:w-1/2 w-full text-right flex-col space-y-4 mt-4 lg:hidden text-xl text-slate-300 bg-slate-950 bg-opacity-30 backdrop-blur-lg py-6 px-4 rounded-lg transition-all duration-300 opacity-0"
+      >
+        <li>
+          <a
+            href="header"
+            class="md:text-2xl text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+            >Home</a
+          >
+        </li>
+        <li class="mt-6">
+          <a
+            href="header"
+            class="md:text-2xl text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+            >About Us</a
+          >
+        </li>
+        <li class="mt-6">
+          <a
+            href="header"
+            class="md:text-2xl text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+            >Contacts</a
+          >
+        </li>
+        <li class="mt-6">
+          <a
+            class="md:text-2xl text-xl text-slate-300 cursor-pointer hover:text-slate-400"
+            href="#mainApp"
+            >Go to app</a
+          >
+        </li>
+        <li>
+          <radix-connect-button></radix-connect-button>
+        </li>
+        <li>
+          <h2 class="text-lg mt-4 text-slate-400" id="connectYourAccount"></h2>
+          <div id="accountInfo">
+            <p id="accountName" class="md:text-xl text-lg"></p>
+            <p id="accountAddress" class="md:text-xl text-lg mt-2 text-slate-400"></p>
+            <p id="loanBalance" class="md:text-lg text-md mt-2 text-slate-400"></p>
+          </div>
+        </li>
+      </ul>
     </header>
 
     <button id="scrollToTopBtn" class="scroll-to-top show">
@@ -65,7 +136,7 @@
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        class="w-12 h-12"
+        class="w-10 h-10"
       >
         <path
           stroke-linecap="round"
@@ -81,34 +152,34 @@
       class="fixed right-0 top-24 w-[26rem] h-5/6 bg-slate-800 bg-opacity-30 backdrop-blur-lg rounded-2xl text-slate-300 p-8 transform translate-x-full transition-transform duration-300"
     >
       <div class="flex flex-row justify-between items-center">
-        <h2 class="text-2xl">Account Info</h2>
+        <h2 class="xl:text-2xl lg:text-xl">Account Info</h2>
         <button
           id="closeSidebar"
-          class="text-6xl cursor-pointer hover:text-slate-400 border-none"
+          class="xl:text-6xl lg:text-4xl cursor-pointer hover:text-slate-400 border-none"
         >
           &times;
         </button>
       </div>
-      <h2 class="text-lg mt-4 text-slate-400" id="connectYourAccount"></h2>
+      <h2 class="xl:text-lg lg:text-md mt-4 text-slate-400" id="connectYourAccount"></h2>
       <div id="accountInfo">
-        <p id="accountName" class="text-2xl"></p>
-        <p id="accountAddress" class="text-xl mt-2 text-slate-400"></p>
-        <p id="loanBalance" class="text-lg mt-2 text-slate-400"></p>
+        <p id="accountName" class="xl:text-2xl lg:text-xl"></p>
+        <p id="accountAddress" class="xl:text-xl lg:text-lg mt-2 text-slate-400"></p>
+        <p id="loanBalance" class="xl:text-lg lg:text-md mt-2 text-slate-400"></p>
       </div>
     </div>
 
     <main>
-      <div class="flex justify-center items-center my-28">
+      <div class="flex flex-col md:flex-row justify-center items-center xl:my-24 lg:m-20 md:m-20 sm:m-10 my-8 xl:mx-0">
         <div class="w-5/6">
-          <h1 class="text-6xl text-slate-200 font-bold">
+          <h1 class="xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-xl text-slate-200 font-bold">
             Welcome<br />
             to Buidl & Borrow
           </h1>
-          <p class="text-slate-400 text-lg mt-6">
+          <p class="text-slate-400 xl:text-lg md:text-md sm:text-sm text-[0.9rem] mt-6">
             Buidl & Borrow is a decentralized lending platform designed to offer
             a seamless and secure way to borrow and lend cryptocurrency assets.
           </p>
-          <p class="text-slate-500 text-md mt-6">
+          <p class="text-slate-500 xl:text-[1.0rem] md:text-sm sm:text-sm text-[0.8rem] mt-6">
             Whether you're looking to obtain a loan against your crypto
             collateral or earn interest by lending, our platform empowers users
             to engage in trustless, transparent financial transactions built on
@@ -116,28 +187,28 @@
           </p>
         </div>
         <div>
-          <img src="./images/coin.png" alt="logo" class="coin-main" />
+          <img src="./images/coin.png" alt="logo" class="xl:w-[42rem] lg:w-[36rem] md:w-[30rem] sm:w-[20rem] w-[16rem]" />
         </div>
       </div>
 
-      <div class="flex justify-center items-center my-28">
+      <div class="flex flex-col-reverse md:flex-row justify-center items-center xl:my-24 lg:m-20 md:m-20 sm:m-10 my-8 xl:mx-0">
         <div>
           <img
             src="./images/credit-and-loan.png"
             alt="logo"
-            class="coin-main"
+            class="xl:w-[42rem] lg:w-[36rem] md:w-[30rem] sm:w-[20rem] w-[16rem]"
           />
         </div>
         <div class="w-5/6">
-          <h1 class="text-6xl text-slate-200 text-end font-bold">
+          <h1 class="xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-xl text-slate-200 font-bold text-end">
             Quickly Borrow and Lend
           </h1>
-          <p class="text-slate-400 text-lg mt-6 text-end">
+          <p class="text-slate-400 xl:text-lg md:text-md sm:text-sm text-[0.9rem] mt-6 text-end">
             Easy Borrowing Process – Quickly obtain loans by using your
             cryptocurrency as collateral. Enter your desired loan amount,
             deposit your collateral, and receive tokens instantly.
           </p>
-          <p class="text-slate-500 text-md mt-6 text-end">
+          <p class="text-slate-500 xl:text-[1.0rem] md:text-sm sm:text-sm text-[0.8rem] mt-6 text-end">
             Transparency & Security – All transactions are recorded on the
             blockchain, ensuring full transparency and protection of your
             assets.
@@ -145,16 +216,18 @@
         </div>
       </div>
 
+      <div id="mainApp" class=""></div>
+
       <div class="flex justify-center">
         <div
           id="instantiateComponentDiv"
           style="display: none"
-          class="flex bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
+          class="flex bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800 mt-20"
         >
           <h2 class="text-3xl text-slate-200">
             Instantiate Buidl & Borrow component
           </h2>
-          <div class="flex items-center mt-8">
+          <div class="flex sm:flex-row flex-col items-center mt-8">
             <input
               type="text"
               placeholder="package address"
@@ -163,7 +236,7 @@
             />
             <button
               id="instantiateComponent"
-              class="ml-4 h-12 p-2 w-80 flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+              class="sm:ml-4 ml-0 sm:mt-0 mt-4 h-12 p-2 sm:w-80 w-full flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
             >
               Instantiate Component
             </button>
@@ -202,7 +275,7 @@ None</pre
               ></p>
             </h3>
           </div>
-          <form class="flex items-center mt-4">
+          <form class="flex sm:flex-row flex-col items-center mt-4">
             <input
               type="text"
               placeholder="collateral amount"
@@ -212,7 +285,7 @@ None</pre
             <button
               type="button"
               id="getCollateralToken"
-              class="ml-4 h-12 p-2 w-80 flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+              class="sm:ml-4 ml-0 sm:mt-0 mt-4 h-12 p-2 sm:w-80 w-full flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
             >
               Get CLT
             </button>
@@ -225,7 +298,7 @@ None</pre
           class="bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
         >
           <h2 class="text-3xl text-slate-200">Borrow Loan Tokens</h2>
-          <form class="flex items-center mt-4">
+          <form class="flex sm:flex-row flex-col items-center mt-4">
             <input
               type="text"
               placeholder="borrow amount (LNT)"
@@ -236,12 +309,12 @@ None</pre
               type="text"
               placeholder="collateral amount (CLT)"
               id="collateralAmount"
-              class="w-full h-12 p-2 ml-4 rounded-lg bg-slate-200 outline-none"
+              class="w-full h-12 p-2 sm:ml-4 ml-0 sm:mt-0 mt-4 rounded-lg bg-slate-200 outline-none"
             />
             <button
               type="button"
               id="borrow"
-              class="ml-4 h-12 p-2 w-80 flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+              class="sm:ml-4 ml-0 sm:mt-0 mt-4 h-12 p-2 sm:w-80 w-full flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
             >
               Borrow
             </button>
@@ -266,7 +339,7 @@ None</pre
           class="bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
         >
           <h2 class="text-3xl text-slate-200">Repay Loan</h2>
-          <form class="flex items-center mt-4">
+          <form class="flex sm:flex-row flex-col items-center mt-4">
             <input
               type="text"
               placeholder="repay amount"
@@ -276,7 +349,7 @@ None</pre
             <button
               type="button"
               id="repay"
-              class="ml-4 h-12 p-2 w-80 flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+              class="sm:ml-4 ml-0 sm:mt-0 mt-4 h-12 p-2 sm:w-80 w-full flex items-center justify-center rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
             >
               Repay
             </button>
@@ -289,13 +362,12 @@ None</pre
       </div>
     </main>
 
-    <footer class="flex justify-center my-20">
+    <footer class="flex items-center flex-col justify-center my-20">
       <p class="text-slate-400 text-lg">Buidl & Borrow</p>
-      <!-- <p class="text-slate-500 text-lg">Buidl & Borrow</p> -->
     </footer>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="./src/main.js"></script>
-    <script type="module" src="./src/script.js"></script>
+    <script type="module" src="./src/script/script.js"></script>
   </body>
 </html>

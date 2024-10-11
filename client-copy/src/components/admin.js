@@ -29,10 +29,14 @@ export const instantiateComponent = async (account, packageAddress) => {
       result.value.transactionIntentHash
     );
 
+    const loanResourceAddress =
+      committedDetails.transaction.affected_global_entities[1];
+    const collateralResourceAddress =
+      committedDetails.transaction.affected_global_entities[2];
     const componentAddress =
       committedDetails.transaction.affected_global_entities[3];
 
-    return { success: true, componentAddress };
+    return { success: true, loanResourceAddress, collateralResourceAddress, componentAddress };
   } catch (error) {
     console.error("Failed to instantiate component:", error);
     return { success: false, error };
