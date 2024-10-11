@@ -21,7 +21,7 @@ mod lending_platform {
                         "name" => "Loan Token", locked;
                         "symbol" => "LNT", locked;
                         "description" => "Loan Token for Buidl & Borrow", locked;
-                        "icon_url" => Url::of("https://cdn-icons-png.flaticon.com/512/566/566295.png"), locked;
+                        "icon_url" => Url::of("https://firebasestorage.googleapis.com/v0/b/buidl-and-borrow-dapp.appspot.com/o/loan-token.png?alt=media&token=4f8e4aeb-2642-453f-bb16-a3baa25daa04"), locked;
                     }
                 })
                 .divisibility(DIVISIBILITY_MAXIMUM)
@@ -34,7 +34,7 @@ mod lending_platform {
                         "name" => "Collateral Token", locked;
                         "symbol" => "CLT", locked;
                         "description" => "Collateral Token for Buidl & Borrow", locked;
-                        "icon_url" => Url::of("https://cdn-icons-png.flaticon.com/512/6681/6681925.png"), locked;
+                        "icon_url" => Url::of("https://firebasestorage.googleapis.com/v0/b/buidl-and-borrow-dapp.appspot.com/o/collateral-token.png?alt=media&token=34a325b0-62d6-41cf-8e21-eca4c638b006"), locked;
                     }
                 })
                 .divisibility(DIVISIBILITY_MAXIMUM)
@@ -61,6 +61,13 @@ mod lending_platform {
 
             component
                 .prepare_to_globalize(OwnerRole::None)
+                .metadata(metadata! {
+                    init {
+                        "name" => "Buidl & Borrow", locked;
+                        "description" => "A decentralized lending platform for issuing and repaying loans", locked;
+                        "icon_url" => Url::of("https://firebasestorage.googleapis.com/v0/b/buidl-and-borrow-dapp.appspot.com/o/coin.png?alt=media&token=9e7b8bb5-a4eb-45d1-ac73-ddfd77393312"), locked;
+                    }
+                })
                 .globalize()
         }
 
