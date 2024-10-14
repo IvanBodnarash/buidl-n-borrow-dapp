@@ -2,6 +2,7 @@ import { repayManifest } from "../manifests/repay";
 import { fetchLoanData, saveLoanData } from "../firebase/firebaseService";
 import { gatewayApi, rdt } from "../radix/radixService";
 import { clearInputs } from "../utils/clearInputs";
+import { showAlert, closeAlert } from "../utils/customAlert";
 
 // ************ Repay Loan Token with Validation ************
 export const repayTokens = async (account, componentAddress, loanResourceAddress) => {
@@ -14,7 +15,7 @@ export const repayTokens = async (account, componentAddress, loanResourceAddress
     isNaN(repayAmount) ||
     repayAmount <= 0
   ) {
-    alert("Invalid repay amount or no outstanding loan.");
+    showAlert("Invalid repay amount or no outstanding loan.");
     return;
   }
 
@@ -22,7 +23,7 @@ export const repayTokens = async (account, componentAddress, loanResourceAddress
   console.log("Remaining debt after repayment:", remainingDebt);
 
   if (remainingDebt < 0) {
-    alert("You are trying to repay more than your debt.");
+    showAlert("You are trying to repay more than your debt.");
     return;
   }
 

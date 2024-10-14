@@ -2,6 +2,7 @@ import { borrowManifest } from "../manifests/borrow";
 import { fetchLoanData, saveLoanData } from "../firebase/firebaseService";
 import { gatewayApi, rdt } from "../radix/radixService";
 import { clearInputs } from "../utils/clearInputs";
+import { showAlert, closeAlert } from "../utils/customAlert";
 
 // ************ Borrow LNT Token with Validation ************
 export const borrowTokens = async (
@@ -26,12 +27,12 @@ export const borrowTokens = async (
     borrowAmount <= 0 ||
     collateralAmount <= 0
   ) {
-    alert("Please enter valid numbers");
+    showAlert("Please enter valid numbers");
     return;
   }
 
   if (borrowAmount > maxLoanTokensAvailable) {
-    alert(`You can only borrow up to ${maxLoanTokensAvailable} LNT.`);
+    showAlert(`You can only borrow up to ${maxLoanTokensAvailable} LNT.`);
     clearInputs();
     return;
   }

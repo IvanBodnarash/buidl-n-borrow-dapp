@@ -1,6 +1,7 @@
 import { withdrawCollateralTokenManifest } from "../manifests/withdraw_collateral_token";
 import { gatewayApi, rdt } from "../radix/radixService";
 import { clearInputs } from "../utils/clearInputs";
+import { showAlert, closeAlert } from "../utils/customAlert";
 
 // ************ Get Collateral Token ************
 export const getCollateralToken = async (
@@ -15,7 +16,7 @@ export const getCollateralToken = async (
 
   // Check if the input field is empty or not a number
   if (isNaN(getCollateralAmount) || getCollateralAmount <= 0) {
-    alert("Please enter a valid collateral amount.");
+    showAlert("Please enter a valid collateral amount.");
     return;
   }
 
@@ -23,7 +24,7 @@ export const getCollateralToken = async (
   console.log("maxCollateralTokensAvailable: ", maxCollateralTokensAvailable);
 
   if (getCollateralAmount > maxCollateralTokensAvailable) {
-    alert("Insufficient CLT tokens available.");
+    showAlert("Insufficient CLT tokens available.");
     clearInputs();
     return;
   }

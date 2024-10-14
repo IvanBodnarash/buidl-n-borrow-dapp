@@ -24,21 +24,21 @@
             id="navMenu"
             class="hidden lg:flex space-x-6 items-center text-xl text-slate-300"
           >
-            <li class="mr-6">
+            <li class="">
               <a
                 href="#"
                 class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
                 >Home</a
               >
             </li>
-            <li class="mr-6">
+            <li class="">
               <a
                 href="#"
                 class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
                 >About Us</a
               >
             </li>
-            <li class="mr-6">
+            <li class="">
               <a
                 href="#"
                 class="text-xl text-slate-300 cursor-pointer hover:text-slate-400"
@@ -154,6 +154,24 @@
     </button>
 
     <div
+      id="custom-alert"
+      class="fixed inset-0 flex items-center justify-center bg-blue-800 bg-opacity-50 opacity-0 transition-opacity duration-500 ease-in-out hidden"
+    >
+      <div
+        id="alertBox"
+        class="flex flex-col bg-slate-900 p-10 rounded-lg shadow-lg max-w-md xl:max-w-xl transform scale-90 transition-all duration-500 ease-in-out"
+      >
+        <p id="alert-message" class="text-xl text-slate-300"></p>
+        <button
+          class="mt-6 p-2 px-8 rounded-lg border-none bg-indigo-900 text-slate-200 cursor-pointer hover:bg-indigo-800"
+          id="closeAlert"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+
+    <div
       id="sidebar"
       class="fixed right-0 top-24 w-[26rem] h-5/6 bg-slate-800 bg-opacity-30 backdrop-blur-lg rounded-2xl text-slate-300 p-8 transform translate-x-full transition-transform duration-300 z-50"
     >
@@ -213,7 +231,7 @@
           <img
             src="./images/coin.png"
             alt="logo"
-            class="xl:w-[42rem] lg:w-[36rem] md:w-[30rem] sm:w-[20rem] w-[16rem] translate-y-6"
+            class="xl:w-[42rem] lg:w-[36rem] md:w-[30rem] sm:w-[20rem] w-[16rem]"
           />
         </div>
       </div>
@@ -334,7 +352,9 @@ None</pre
         <div
           class="bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
         >
-          <h2 class="lg:text-3xl md:text-2xl sm:text-xl text-xl text-slate-200">Borrow Loan Tokens</h2>
+          <h2 class="lg:text-3xl md:text-2xl sm:text-xl text-xl text-slate-200">
+            Borrow Loan Tokens
+          </h2>
           <form class="flex sm:flex-row flex-col items-center mt-4">
             <input
               type="text"
@@ -363,7 +383,9 @@ None</pre
             </p>
             <p id="borrowLimitInfo">
               Maximum available to borrow:
-              <span id="loanTokenAmountDisplay" class="text-slate-400 md:text-xl sm:text-lg text-md"
+              <span
+                id="loanTokenAmountDisplay"
+                class="text-slate-400 md:text-xl sm:text-lg text-md"
                 >Loading...</span
               >
             </p>
@@ -375,7 +397,9 @@ None</pre
         <div
           class="bg-slate-900 p-10 rounded-2xl w-5/6 border-solid border-2 border-sky-800"
         >
-          <h2 class="lg:text-3xl md:text-2xl sm:text-xl text-xl text-slate-200">Repay Loan</h2>
+          <h2 class="lg:text-3xl md:text-2xl sm:text-xl text-xl text-slate-200">
+            Repay Loan
+          </h2>
           <form class="flex sm:flex-row flex-col items-center mt-4">
             <input
               type="text"
@@ -391,7 +415,9 @@ None</pre
               Repay
             </button>
           </form>
-          <div class="text-slate-300 md:text-xl sm:text-lg text-md mt-6 flex-col">
+          <div
+            class="text-slate-300 md:text-xl sm:text-lg text-md mt-6 flex-col"
+          >
             <h2>Loan Balance:</h2>
             <p id="loanBalance" class="text-slate-400 mt-2">Loading...</p>
           </div>

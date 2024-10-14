@@ -6,6 +6,7 @@ import { instantiateComponent } from "./components/admin";
 import { rdt, checkIfAdmin } from "./radix/radixService";
 import { fetchLoanData } from "./firebase/firebaseService";
 import { fetchAndShowLendingAppState } from "./components/stateDisplay";
+import { closeAlert } from "./utils/customAlert";
 
 let loanResourceAddress = "resource_tdx_2_1t43guqq9jgg5rruvhvjhjutl3eg3e7q20ynw638a97ywwhujqts0f5";
 let collateralResourceAddress = "resource_tdx_2_1thltukdcvfp583mhrcrd2qzvq3gzrt82vapucza5e087d8v0wtn3kw";
@@ -58,11 +59,6 @@ rdt.walletApi.walletData$.subscribe(async (walletData) => {
     });
 
   account = walletData.accounts[0];
-
-  // const shortAccountAddress = `${account?.address.slice(
-  //   0,
-  //   18
-  // )} .... ${account?.address.slice(-8)}`;
 
   document.querySelectorAll("#accountInfo").forEach((accountInfo) => {
     accountInfo.style.display = "block";
@@ -211,3 +207,7 @@ document.getElementById("accountButton").onclick = () => {
 document.getElementById("closeSidebar").onclick = () => {
   document.getElementById("sidebar").classList.toggle("translate-x-full");
 };
+
+document.getElementById("closeAlert").onclick = () => {
+  closeAlert();
+}
