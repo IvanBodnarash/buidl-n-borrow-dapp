@@ -6,6 +6,7 @@
     <meta name="description" content="" />
     <title>Buidl & Borrow</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/coin.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -205,7 +206,7 @@
       <div
         class="flex flex-col md:flex-row justify-center items-center xl:my-24 lg:m-20 md:m-20 sm:m-10 my-8 xl:mx-0"
       >
-        <div class="w-5/6 animate-fadeinleft">
+        <div class="w-5/6" data-aos="fade-right">
           <h1
             class="xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-xl text-slate-200 font-bold"
           >
@@ -227,7 +228,7 @@
             blockchain technology.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <img
             src="./images/coin.png"
             alt="logo"
@@ -239,14 +240,14 @@
       <div
         class="flex flex-col-reverse md:flex-row justify-center items-center xl:my-24 lg:m-20 md:m-20 sm:m-10 my-8 xl:mx-0"
       >
-        <div>
+        <div data-aos="fade-right">
           <img
             src="./images/credit-and-loan.png"
             alt="logo"
             class="xl:w-[42rem] lg:w-[36rem] md:w-[30rem] sm:w-[20rem] w-[16rem]"
           />
         </div>
-        <div class="w-5/6">
+        <div class="w-5/6" data-aos="fade-left">
           <h1
             class="xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-xl text-slate-200 font-bold text-end"
           >
@@ -432,6 +433,10 @@ None</pre
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/script/script.js"></script>
   </body>
